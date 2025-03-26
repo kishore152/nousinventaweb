@@ -23,6 +23,11 @@ export const routes: Routes = [
         pathMatch: 'full',
         component: ContactComponent,
     },
+    {
+        path: 'aipage',
+        pathMatch: 'full',
+        loadComponent: () => import('./service/aipage/aipage.component').then(m => m.AipageComponent)
+    },
     {   path: '**',
         redirectTo: 'home',
         pathMatch: 'full'

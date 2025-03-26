@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-contact',
+  selector: 'app-aipage',
   imports: [RouterModule],
-  templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss'
+  templateUrl: './aipage.component.html',
+  styleUrl: './aipage.component.scss'
 })
-export class ContactComponent {
+export class AipageComponent {
 
   constructor(private route: ActivatedRoute, private router: Router){
   
@@ -17,5 +17,6 @@ export class ContactComponent {
     console.log(ind)
     this.router.navigate(['/'+ind])
   }
+
 
 }

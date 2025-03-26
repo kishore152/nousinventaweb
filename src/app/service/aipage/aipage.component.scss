@@ -54,3 +54,12 @@
     }
 }
 
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #07a7fd;
+}
+
+.bg-number-box{
+    background-color: #78fac5 !important;
+    color: #fff !important;
+}
