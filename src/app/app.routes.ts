@@ -28,6 +28,11 @@ export const routes: Routes = [
         pathMatch: 'full',
         loadComponent: () => import('./service/aipage/aipage.component').then(m => m.AipageComponent)
     },
+    {
+        path: 'learningtopic',
+        pathMatch: 'full',
+        loadComponent: () => import('./resource/learningtopic/learningtopic.component').then(m => m.LearningtopicComponent)
+    },
     {   path: '**',
         redirectTo: 'home',
         pathMatch: 'full'

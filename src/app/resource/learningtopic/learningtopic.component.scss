@@ -35,17 +35,20 @@
     max-width:100%;
 }
 
-.nowrap{
-    text-wrap: nowrap;
+.banner-main-single-img{
+    width:75%
 }
 
-.dropdown-menu .dropdown-item{
-    font-size: 14px !important;
+
+.bg-number-box{
+    background-color: #78fac5 !important;
+    color: #fff !important;
 }
 
-.icon-prime-color{
-    color:#78fac5; 
+.card-img-com{
+    width:30%;
 }
+
 
 
 @media (min-width: 1400px) {
@@ -54,3 +57,20 @@
     }
 }
 
+.nav-bg-main-abt{
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height:38rem;
+
+}
+
+
+.container-abt{
+    max-width: 960px;
+}
+
+
+.card-img{
+    width:140px
+}
