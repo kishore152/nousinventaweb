@@ -1,6 +1,6 @@
 <div lang="en" class="layout-navbar-fixed layout-wide layout-menu-100vh"  dir="ltr" data-skin="default" data-assets-path="" data-template="front-pages" data-bs-theme="light">
     <div  style="--bs-scrollbar-width: 0px;">
-    <nav class="layout-navbar shadow-none py-0 navbar-active">
+    <nav class="layout-navbar  py-0 {{isScrolled ? 'navbar-active shadow-lg':''}}">
         <div class="container px-0">
             <div class="navbar navbar-expand-lg landing-navbar px-3 px-md-1 mt-0 shadow-none" style="background: none;border: none;">
               <div class="navbar-brand app-brand demo d-flex py-0 me-4 me-xl-8 ms-0">
@@ -30,26 +30,26 @@
                      
                       <li class="nav-item">
                         <div class="btn-group">
-                          <a style="border: none;" class="nav-link dropdown-toggle waves-effect  text-dark" style="border: none;" data-bs-toggle="dropdown" aria-expanded="false">AI Services</a>
+                          <a style="border: none;" class="nav-link dropdown-toggle waves-effect {{isScrolled ? 'text-dark':'text-white'}}" style="border: none;" data-bs-toggle="dropdown" data-trigger="" aria-expanded="false">AI Services</a>
                           <ul class="dropdown-menu" style="">
                             <li (click)="navigateTo('aipage')"><a class="px-2 dropdown-item waves-effect d-flex align-items-center" href="javascript:void(0);"> <i class="ti ti-brain me-2 banner-title-prime"></i>AI/ML Engineering</a></li>
-                            <li><a class="px-2 dropdown-item waves-effect d-flex align-items-center" href="javascript:void(0);"><i class="ti ti-bulb me-2 banner-title-prime"></i>Digital Engineering </a></li>
+                            <li><a class="px-2 dropdown-item waves-effect d-flex align-items-center " href="javascript:void(0);"><i class="ti ti-bulb me-2 banner-title-prime"></i>Digital Engineering </a></li>
                             <li><a class="px-2 dropdown-item waves-effect d-flex align-items-center" href="javascript:void(0);"><i class="ti ti-device-desktop-code me-2 banner-title-prime"></i>Quality Engineering</a></li>
                             <li><a class="px-2 dropdown-item waves-effect d-flex align-items-center" href="javascript:void(0);"><i class="ti ti-settings-check me-2 banner-title-prime"></i>Data Engineering</a></li>
-                            <li><a class="px-2 dropdown-item waves-effect d-flex align-items-center" href="javascript:void(0);"><i class="ti ti-settings-check me-2 banner-title-prime"></i>Application Modernization</a></li>
+                            <li><a class="px-2 dropdown-item waves-effect d-flex align-items-center" href="javascript:void(0);"><i class="ti ti-apps me-2 banner-title-prime"></i>Application Modernization</a></li>
                            </ul>
                         </div>
                        </li> 
     
                        <li class="nav-item">
                         <div class="btn-group">
-                          <a style="border: none;" class="nav-link dropdown-toggle waves-effect  text-dark" style="border: none;" data-bs-toggle="dropdown" aria-expanded="false">Industries</a>
+                          <a style="border: none;" class="nav-link dropdown-toggle waves-effect {{isScrolled ? 'text-dark':'text-white'}}" style="border: none;" data-bs-toggle="dropdown" aria-expanded="false">Industries</a>
                           <ul class="dropdown-menu" style="">
-                            <li><a class="px-2 dropdown-item waves-effect d-flex align-items-center" href="javascript:void(0);"><i class="ti ti-microphone me-2 banner-title-prime"></i> Banking and Financial Services</a></li>
-                            <li><a class="px-2 dropdown-item waves-effect d-flex align-items-center" href="javascript:void(0);"><i class="ti ti-microphone me-2 banner-title-prime"></i> Retail and E-commerce</a></li>
-                            <li><a class="px-2 dropdown-item waves-effect d-flex align-items-center" href="javascript:void(0);"><i class="ti ti-microphone me-2 banner-title-prime"></i> HealthCare and Life Sciences</a></li>
-                            <li><a class="px-2 dropdown-item waves-effect d-flex align-items-center" href="javascript:void(0);"><i class="ti ti-microphone me-2 banner-title-prime"></i> Travel and Logistics</a></li>
-                            <li><a class="px-2 dropdown-item waves-effect d-flex align-items-center" href="javascript:void(0);"><i class="ti ti-microphone me-2 banner-title-prime"></i> Education</a></li>
+                            <li><a class="px-2 dropdown-item waves-effect d-flex align-items-center" href="javascript:void(0);"><i class="ti ti-wallet me-2 banner-title-prime"></i> Banking and Financial Services</a></li>
+                            <li><a class="px-2 dropdown-item waves-effect d-flex align-items-center" href="javascript:void(0);"><i class="ti ti-shopping-bag me-2 banner-title-prime"></i> Retail and E-commerce</a></li>
+                            <li><a class="px-2 dropdown-item waves-effect d-flex align-items-center" href="javascript:void(0);"><i class="ti ti-hospital-circle me-2 banner-title-prime"></i> HealthCare and Life Sciences</a></li>
+                            <li><a class="px-2 dropdown-item waves-effect d-flex align-items-center" href="javascript:void(0);"><i class="ti ti-building-airport me-2 banner-title-prime"></i> Travel and Logistics</a></li>
+                            <li><a class="px-2 dropdown-item waves-effect d-flex align-items-center" href="javascript:void(0);"><i class="ti ti-book me-2 banner-title-prime"></i> Education</a></li>
                           
                             </ul>
                         </div>
@@ -58,15 +58,15 @@
     
                        <li class="nav-item">
                         <div class="btn-group">
-                          <a  class="nav-link dropdown-toggle waves-effect  text-dark" style="border: none;" data-bs-toggle="dropdown" aria-expanded="false">Use Cases</a>
+                          <a  class="nav-link dropdown-toggle waves-effect {{isScrolled ? 'text-dark':'text-white'}}" style="border: none;" data-bs-toggle="dropdown" aria-expanded="false">Use Cases</a>
                           <ul class="dropdown-menu" style="">
-                            <li><a class="px-2 dropdown-item waves-effect d-flex align-items-center" href="javascript:void(0);"><i class="ti ti-info-circle me-2 banner-title-prime"></i>AI Cold Caller</a></li>
-                            <li><a class="px-2 dropdown-item waves-effect d-flex align-items-center" href="javascript:void(0);"><i class="ti ti-backpack me-2 banner-title-prime"></i> AI Language Trainer</a></li>
-                            <li><a class="px-2 dropdown-item waves-effect d-flex align-items-center" href="javascript:void(0);"><i class="ti ti-layers-difference me-2 banner-title-prime"></i>AI Talk Companion</a></li>
-                            <li><a class="px-2 dropdown-item waves-effect d-flex align-items-center" href="javascript:void(0);"><i class="ti ti-info-circle me-2 banner-title-prime"></i>AI Test Designer</a></li>
-                            <li><a class="px-2 dropdown-item waves-effect d-flex align-items-center" href="javascript:void(0);"><i class="ti ti-backpack me-2 banner-title-prime"></i>  AI Test Automation Agent</a></li>
-                            <li><a class="px-2 dropdown-item waves-effect d-flex align-items-center" href="javascript:void(0);"><i class="ti ti-layers-difference me-2 banner-title-prime"></i>AI Data Generator</a></li>
-                            <li><a class="px-2 dropdown-item waves-effect d-flex align-items-center" href="javascript:void(0);"><i class="ti ti-layers-difference me-2 banner-title-prime"></i> AI Incident Manager</a></li>
+                            <li><a class="px-2 dropdown-item waves-effect d-flex align-items-center" href="javascript:void(0);"><i class="ti ti-phone me-2 banner-title-prime"></i>AI Cold Caller</a></li>
+                            <li><a class="px-2 dropdown-item waves-effect d-flex align-items-center" href="javascript:void(0);"><i class="ti ti-language me-2 banner-title-prime"></i> AI Language Trainer</a></li>
+                            <li><a class="px-2 dropdown-item waves-effect d-flex align-items-center" href="javascript:void(0);"><i class="ti ti-user-share me-2 banner-title-prime"></i>AI Talk Companion</a></li>
+                            <li><a class="px-2 dropdown-item waves-effect d-flex align-items-center" href="javascript:void(0);"><i class="ti ti-filters me-2 banner-title-prime"></i>AI Test Designer</a></li>
+                            <li><a class="px-2 dropdown-item waves-effect d-flex align-items-center" href="javascript:void(0);"><i class="ti ti-urgent me-2 banner-title-prime"></i>  AI Test Automation Agent</a></li>
+                            <li><a class="px-2 dropdown-item waves-effect d-flex align-items-center" href="javascript:void(0);"><i class="ti ti-database me-2 banner-title-prime"></i>AI Data Generator</a></li>
+                            <li><a class="px-2 dropdown-item waves-effect d-flex align-items-center" href="javascript:void(0);"><i class="ti ti-password-user me-2 banner-title-prime"></i> AI Incident Manager</a></li>
                            </ul>
                         </div>
                        </li> 
@@ -74,20 +74,20 @@
 
                        <li class="nav-item">
                         <div class="btn-group">
-                          <a  class="nav-link dropdown-toggle waves-effect  text-dark" style="border: none;" data-bs-toggle="dropdown" aria-expanded="false">Resource</a>
+                          <a  class="nav-link dropdown-toggle waves-effect {{isScrolled ? 'text-dark':'text-white'}}" style="border: none;" data-bs-toggle="dropdown" aria-expanded="false">Resource</a>
                           <ul class="dropdown-menu" style="">
-                            <li><a class="px-2 dropdown-item waves-effect d-flex align-items-center" href="javascript:void(0);"><i class="ti ti-info-circle me-2 banner-title-prime"></i>Perspective</a></li>
+                            <li (click)="navigateTo('learningtopic')"><a class="px-2 dropdown-item waves-effect d-flex align-items-center" href="javascript:void(0);"><i class="ti ti-perspective me-2 banner-title-prime"></i>Perspective</a></li>
                             <li (click)="navigateTo('learningtopic')"><a class="px-2 dropdown-item waves-effect d-flex align-items-center" href="javascript:void(0);"><i class="ti ti-backpack me-2 banner-title-prime"></i>Learning Topics</a></li>
                           </ul>
                         </div>
                        </li> 
     
                        <li class="nav-item">
-                        <a class="nav-link fw-medium text-dark nowrap" [routerLink]="['/about']">Partners</a>
+                        <a class="nav-link fw-medium {{isScrolled ? 'text-dark':'text-white'}} nowrap" [routerLink]="['/about']">Partners</a>
                       </li>
     
                       <li class="nav-item">
-                        <a class="nav-link fw-medium text-dark nowrap" [routerLink]="['/about']">About Us</a>
+                        <a class="nav-link fw-medium {{isScrolled ? 'text-dark':'text-white'}} nowrap" [routerLink]="['/about']">About Us</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link fw-medium text-dark nowrap btn btn-md btn-primary text-white px-4 shadow-lg bg-btn-linear" [routerLink]="['/contact']">Contact us</a>
@@ -106,9 +106,9 @@
 
 
 
-<div class="blank py-5"></div>
+
 <!-- Footer: Start -->
-<footer class="landing-footer bg-body footer-text  mt-5">
+<footer class="landing-footer bg-body footer-text">
   <div class="footer-top position-relative overflow-hidden z-1" style="border-radius: 0;">
     <img src="https://demos.pixinvent.com/vuexy-html-admin-template/assets/img/front-pages/backgrounds/footer-bg.png" alt="footer bg" class="footer-bg banner-bg-img z-n1">
     <div class="container">

@@ -30,10 +30,12 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/bootstrap/css/boot.css"
+              "src/assets/bootstrap/css/boot.css",
+              "src/assets/dropzone/dropzone.css"
             ],
             "scripts": [
-              "src/assets/bootstrap/js/bootstrap.min.js"
+              "src/assets/bootstrap/js/bootstrap.min.js",
+              "/src/assets/dropzone/dropzone.js"
             ],
             "server": "src/main.server.ts",
             "outputMode": "server",

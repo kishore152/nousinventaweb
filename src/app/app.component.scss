@@ -54,3 +54,11 @@
     }
 }
 
+.layout-navbar{
+    transition: 800ms cubic-bezier(.2,.8,.2,1);
+}
+
+
+.navbar-active{
+    background-color: #fff !important;
+}
