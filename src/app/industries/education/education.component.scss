@@ -1,0 +1,27 @@
+.banner-title{
+    color:#232129
+}
+
+.banner-title-prime{
+    color:#1d2d9b
+}
+
+.bg-btn-linear{
+    background: #1d2d9b;
+    border:none
+}
+
+
+.nowrap{
+    text-wrap: nowrap;
+}
+
+@media (min-width: 1400px) {
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 1128px !important;
+    }
+}
+
+
+
+
