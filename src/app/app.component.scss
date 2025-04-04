@@ -62,3 +62,14 @@
 .navbar-active{
     background-color: #fff !important;
 }
+
+
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+[data-scroll-container] {
+  overflow: hidden !important;
+}

@@ -1,4 +1,4 @@
-<div lang="en" class="layout-navbar-fixed layout-wide layout-menu-100vh"  dir="ltr" data-skin="default" data-assets-path="" data-template="front-pages" data-bs-theme="light">
+<div lang="en"  class="layout-navbar-fixed layout-wide layout-menu-100vh"  dir="ltr" data-skin="default" data-assets-path="" data-template="front-pages" data-bs-theme="light" data-scroll-container>
     <div  style="--bs-scrollbar-width: 0px;">
     <nav class="layout-navbar  py-0 {{isScrolled ? 'navbar-active shadow-lg':''}}">
         <div class="container px-0">
@@ -101,8 +101,9 @@
           </div>
         </nav>
 
+<div #scrollContainer data-scroll-container>
+  <router-outlet></router-outlet>
 
-<router-outlet></router-outlet>
 
 
 
@@ -198,6 +199,6 @@
   </div>
 </footer>
 <!-- Footer: End -->
-
+</div>
 </div>
 </div>

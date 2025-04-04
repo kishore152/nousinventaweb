@@ -1,10 +1,11 @@
 import { AfterViewInit, Component } from '@angular/core';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { InsightComponent } from '../common/insight/insight.component';
+import { CasestudiesComponent } from '../common/casestudies/casestudies.component';
 
 @Component({
   selector: 'app-education',
-  imports: [RouterModule,InsightComponent],
+  imports: [RouterModule, InsightComponent, CasestudiesComponent],
   templateUrl: './education.component.html',
   styleUrl: './education.component.scss'
 })

@@ -4,7 +4,29 @@
   <title>Nousinventa</title>
   <style>
     #loading {z-index: 9999;}.wrapper{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);} #loader:after,#loader:before{content:"";position:absolute}#preloader-lo{position:fixed;top:0;left:0;width:100%;height:100%}#loader{display:block;position:relative;left:73%;top:50%;width:75px;height:75px;margin:-75px 0 0 -75px;border-radius:50%;border:3px solid transparent;border-top-color:#455677;-webkit-animation:2s linear infinite spin;animation:2s linear infinite spin}#loader:before{top:5px;left:5px;right:5px;bottom:5px;border-radius:50%;border:3px solid transparent;border-top-color:#657aa6;-webkit-animation:3s linear infinite spin;animation:3s linear infinite spin}#loader:after{top:15px;left:15px;right:15px;bottom:15px;border-radius:50%;border:3px solid transparent;border-top-color:#c8d0df;-webkit-animation:1.5s linear infinite spin;animation:1.5s linear infinite spin}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes spin{0%{-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}
-    </style>
+   
+    html.has-scroll-smooth {
+  overflow: hidden;
+}
+
+html.has-scroll-dragging {
+  user-select: none;
+}
+
+[data-scroll-container] {
+  overflow: hidden;
+}
+
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+[data-scroll-container] {
+  overflow: hidden !important;
+}
+   </style>
     <div id="loading" style="display:none">
       <div class="wrapper">
         <div id="preloader-lo">
@@ -52,6 +74,7 @@
   <link rel="stylesheet" href="https://demos.pixinvent.com/vuexy-html-admin-template/assets/vendor/css/pages/front-page.css">
   <link rel="stylesheet" href="https://demos.pixinvent.com/vuexy-html-admin-template/assets/vendor/css/pages/front-page-landing.css">
   <script src="https://demos.pixinvent.com/vuexy-html-admin-template/assets/vendor/libs/swiper/swiper.js"></script>
+
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
