@@ -160,8 +160,6 @@ element.style {
 
 
 
-element.style {
-}
 .business-section-two .business-tabs .tab-btns .tab-btn .icon {
     position: relative;
     display: block;
@@ -183,3 +181,77 @@ element.style {
     height: 897px;
     background-repeat: no-repeat;
 }
+
+
+.writing-item{
+    position: relative;
+    padding: 20px 15px 30px 72px;
+    z-index: 1;
+    margin-bottom: 30px;
+    transition: .3s linear;
+    transform: translateY(0);
+}
+
+.writing-content h4{
+    
+}
+
+
+.writing-item:hover {
+    transform: translateY(-4px);
+}
+
+
+.writing-shape {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.writing-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #fff;
+    font-size: 26px;
+    color: #fff;
+    position: absolute;
+    left: -5px;
+    top: 4px;
+    z-index: 1;
+    transition: .3s linear;
+    transform: rotateY(0);
+}
+
+
+.writing-icon::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+    border-radius: 50%;
+    background: #5a5a5a;
+    z-index: -1;
+}
+
+.writing-item {
+    position: relative;
+    perspective: 1000px;
+  
+    .writing-icon {
+      transition: transform 0.6s ease;
+      transform-style: preserve-3d;
+    }
+  
+    &:hover .writing-icon {
+      transform: rotateY(180deg);
+    }
+  }
