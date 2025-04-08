@@ -21,7 +21,7 @@ export class AppComponent implements AfterViewInit, OnDestroy{
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
       this.url = event.url
-      if(this.url === '/contact' || this.url === '/aipage'){
+      if(this.navignoreurl(this.url)){
         this.isScrolled = true
       }else{
         this.isScrolled = false
@@ -29,11 +29,15 @@ export class AppComponent implements AfterViewInit, OnDestroy{
      }
     });
     }
+
+
+    navignoreurl(url:any):boolean{
+      return url === '/contact' || url === '/aipage' || url === '/aiautomation' || url === '/aiproductdev' || url === '/aiconsulting'
+    }
   
      
     
     navigateTo(ind:any){
-      console.log(ind)
       setTimeout(()=>{
         this.locomotiveScroll.update();
       },700)     
@@ -43,14 +47,11 @@ export class AppComponent implements AfterViewInit, OnDestroy{
 
     @HostListener('window:scroll', [])
     onWindowScroll() {
-      console.log(window.scrollY)
-      if(this.url === '/contact' || this.url === '/aipage'){
+      if(this.navignoreurl(this.url)){
         this.isScrolled = true;
       }else{
         this.isScrolled = window.scrollY > 50;
       }
-
-      
     }
 
 
@@ -77,7 +78,7 @@ export class AppComponent implements AfterViewInit, OnDestroy{
             window.addEventListener('resize', () => this.locomotiveScroll.update());
             this.locomotiveScroll.on('scroll', (event: any) => {
               this.ngZone.run(() => {
-                if(this.url === '/contact' || this.url === '/aipage'){
+                if(this.navignoreurl(this.url)){
                   this.isScrolled = true;
                 }else{
                   this.isScrolled = event.scroll.y > 100;

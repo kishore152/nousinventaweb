@@ -29,6 +29,21 @@ export const routes: Routes = [
         loadComponent: () => import('./service/aipage/aipage.component').then(m => m.AipageComponent)
     },
     {
+        path: 'aiautomation',
+        pathMatch: 'full',
+        loadComponent: () => import('./service/aidrivenautomation/aidrivenautomation.component').then(m => m.AidrivenautomationComponent)
+    },
+    {
+        path: 'aiproductdev',
+        pathMatch: 'full',
+        loadComponent: () => import('./service/aiproductdev/aiproductdev.component').then(m => m.AiproductdevComponent)
+    },
+    {
+        path: 'aiconsulting',
+        pathMatch: 'full',
+        loadComponent: () => import('./service/aiconsulting/aiconsulting.component').then(m => m.AiconsultingComponent)
+    },
+    {
         path: 'learningtopic',
         pathMatch: 'full',
         loadComponent: () => import('./resource/learningtopic/learningtopic.component').then(m => m.LearningtopicComponent)
