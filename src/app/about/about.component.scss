@@ -91,3 +91,68 @@
     z-index: 1; /* Ensures text stays above the overlay */
   }
   
+
+  .our-val .card{
+    min-height: 265px;;
+    max-height: 265px;;
+  }
+
+
+  .single-values-box {
+    position: relative;
+    padding-left: 28px;
+    overflow: hidden;
+}
+  .single-values-box::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    background: #262739;
+    width: 2px;
+    height: 100%;
+}
+
+
+.single-values-box::after {
+    position: absolute;
+    left: 0;
+    content: "";
+    background-image: url(https://powerai.wprealizer.com/wp-content/themes/powerai/assets/images/shapes/values-sp.png);
+    width: 2px;
+    height: 81px;
+    animation: slide_up 6s linear infinite;
+}
+
+@keyframes slide_up {
+    from {
+      bottom: -81px;
+    }
+    to {
+      bottom: 100%;
+    }
+  }
+
+
+
+  .bg-blend-around {
+    -webkit-mask-image: radial-gradient(ellipse, #000 50%, transparent 90%);
+    mask-image: radial-gradient(ellipse, #000 50%, transparent 90%);
+}
+
+
+  .bg-pattern-dot {
+    background-image: url(https://copygen.themenio.com/assets/images/pattern/dot-a.png);
+    background-position: center;
+}
+
+
+.nk-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    pointer-events: none;
+}
