@@ -185,12 +185,14 @@ element.style {
 
 .writing-item{
     position: relative;
-    padding: 20px 15px 30px 72px;
+    padding: 20px 10px 30px 72px;
     z-index: 1;
     margin-bottom: 30px;
     transition: .3s linear;
     transform: translateY(0);
+    cursor: pointer;
 }
+
 
 .writing-content h4{
     line-height: 1.4;
@@ -254,4 +256,10 @@ element.style {
     &:hover .writing-icon {
       transform: rotateY(180deg);
     }
+
+    &:hover .learn-more{
+        color:#1d2d9b !important
+    }
+
+
   }

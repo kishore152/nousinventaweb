@@ -14,8 +14,7 @@ export class AipageComponent {
     }
 
   navigateTo(ind:any){
-    console.log(ind)
-    this.router.navigate(['/'+ind])
+       this.router.navigate(['/'+ind])
   }
 
 
