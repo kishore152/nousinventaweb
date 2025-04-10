@@ -41,8 +41,8 @@
 
 
 .bg-number-box{
-    background-color: #78fac5 !important;
-    color: #fff !important;
+    width: 17px;
+    height: 17px;
 }
 
 .card-img-com{
@@ -155,4 +155,55 @@
     bottom: 0;
     z-index: 1;
     pointer-events: none;
+}
+
+
+
+
+.abt-layer{
+    background-image: url(https://powerai.wprealizer.com/wp-content/uploads/2024/03/suscribe-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 360px;
+    max-height: 360px;
+    border-radius: 32px;;
+}
+
+
+
+.section__title-title {
+    color: #FFFFFF !important;
+    font-size: 48px !important;
+    line-height: 1.2em !important;
+    font-weight: 600 !important;
+}
+
+
+.section__title-desc {
+    color: #FFFFFFB3 !important;
+}
+
+.section__title-desc {
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    line-height: 1.77 !important;
+}
+
+
+.pai__button {
+    background: #4229FF;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.pai__button-style-1 {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+    padding: 16px 32px;
+    border-radius: 32px;
+    transition: 0.3s all ease;
 }
