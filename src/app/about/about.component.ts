@@ -27,7 +27,7 @@ export class AboutComponent implements OnInit,AfterViewInit {
         spaceBetween: 5,
         grabCursor: !0,
         autoplay: {
-            delay: 3e3,
+            delay: 30000,
             disableOnInteraction: !1
         },
         loop: !0,
@@ -48,6 +48,7 @@ export class AboutComponent implements OnInit,AfterViewInit {
         }
     })
     },100)
+   
    
   }  
 
