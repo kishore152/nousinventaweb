@@ -27,7 +27,7 @@ export class AboutComponent implements OnInit,AfterViewInit {
         spaceBetween: 5,
         grabCursor: !0,
         autoplay: {
-            delay: 30000,
+            delay: 3e3,
             disableOnInteraction: !1
         },
         loop: !0,
