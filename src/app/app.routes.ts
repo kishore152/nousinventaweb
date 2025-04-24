@@ -71,6 +71,10 @@ export const routes: Routes = [
         path: 'education',
         pathMatch: 'full',
         loadComponent: () => import('./industries/education/education.component').then(m => m.EducationComponent)
+    },{
+        path: 'coldcaller',
+        pathMatch: 'full',
+        loadComponent: () => import('./usecase/coldcaller/coldcaller.component').then(m => m.ColdcallerComponent)
     },
     {   path: '**',
         redirectTo: 'home',
