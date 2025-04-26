@@ -30,24 +30,27 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/dropzone/dropzone.css"
+              "src/assets/swiper/swiper.css",
+              "src/assets/dropzone/dropzone.css",
+              "src/assets/wave/wave.css",
+              "src/assets/bootstrap/css/pickr-themes.css",
+               "src/assets/bootstrap/css/core.css",
+               "src/assets/bootstrap/css/demo.css",
+               "src/assets/bootstrap/css/front.css",
+               "src/assets/bootstrap/css/front-landing.css"
             ],
             "scripts": [
               "src/assets/bootstrap/js/bootstrap.min.js",
-              "/src/assets/dropzone/dropzone.js"
-            ],
-            "server": "src/main.server.ts",
-            "outputMode": "server",
-            "ssr": {
-              "entry": "src/server.ts"
-            }
+              "src/assets/dropzone/dropzone.js",
+              "src/assets/swiper/swiper.js"
+            ]
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
+                  "maximumWarning": "5MB",
                   "maximumError": "5MB"
                 },
                 {
