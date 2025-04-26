@@ -9,8 +9,8 @@
                   <i class="icon-base ti ti-menu-2 icon-lg align-middle text-heading fw-medium"></i>
                 </button>
                 <!-- Mobile menu toggle: End-->
-                <a href="landing-page.html" class="app-brand-link">
-                  <span class="app-brand-logo demo py-4">
+                <a href="javascript:;" class="app-brand-link" (click)="navigateTo('home')">
+                  <span class="app-brand-logo demo py-5">
                         <span class="text-primary">
                             <img  src="assets/images/logo/Nousinventa dark1.png" class="nav-logo-img {{!isScrolled ? 'd-none':''}}">
                             <img  src="assets/images/logo/Nousinventa white1.png" class="nav-logo-img {{isScrolled ? 'd-none':''}}">
@@ -82,14 +82,14 @@
                        </li>  -->
     
                        <li class="nav-item">
-                        <a class="nav-link fw-medium {{isScrolled ? 'text-dark':'text-white'}} nowrap" [routerLink]="['/perspective']">Blog</a>
+                        <a href="javascript:;" (click)="navigateTo('perspective')" class="nav-link fw-medium {{isScrolled ? 'text-dark':'text-white'}} nowrap" >Blog</a>
                       </li>
     
                       <li class="nav-item">
-                        <a class="nav-link fw-medium {{isScrolled ? 'text-dark':'text-white'}} nowrap" [routerLink]="['/about']">About Us</a>
+                        <a href="javascript:;" (click)="navigateTo('about')" class="nav-link fw-medium {{isScrolled ? 'text-dark':'text-white'}} nowrap" >About Us</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link fw-medium text-dark nowrap btn btn-md btn-primary text-white px-4 shadow-lg bg-btn-linear" [routerLink]="['/contact']">Contact us</a>
+                        <a href="javascript:;" (click)="navigateTo('contact')" class="nav-link fw-medium text-dark nowrap btn btn-md btn-primary text-white px-4 shadow-lg bg-btn-linear">Contact us</a>
                       </li>
     
                      </ul>  
@@ -110,11 +110,11 @@
 <!-- Footer: Start -->
 <footer class="landing-footer bg-body footer-text">
   <div class="footer-top position-relative overflow-hidden z-1" style="border-radius: 0;">
-    <img src="https://demos.pixinvent.com/vuexy-html-admin-template/assets/img/front-pages/backgrounds/footer-bg.png" alt="footer bg" class="footer-bg banner-bg-img z-n1">
+    <img src="assets/images/common/footer-bg.png" alt="footer bg" class="footer-bg banner-bg-img z-n1">
     <div class="container">
       <div class="row gx-0 gy-6 g-lg-6">
         <div class="col-12">
-          <a href="landing-page.html" class="app-brand-link">
+          <a (click)="navigateTo('home')" class="app-brand-link" style="cursor: pointer;">
             <span class="app-brand-logo demo">
                 <span class="text-primary">
                     <img src="assets/images/logo/Nousinventa white1.png" class="nav-logo-img">
@@ -142,9 +142,9 @@
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6">
           <h6 class="footer-title mb-2">Other Links</h6>
-          <small class="text-white text-decoration-underline"><a [href]="['home']" class="text-white">Home</a></small><br>
-          <small class="text-white text-decoration-underline"><a [href]="['about']" class="text-white">Who We Are</a></small><br>
-          <small class="text-white text-decoration-underline"><a [href]="['contact']" class="text-white">Contact Us</a></small>
+          <small class="text-white text-decoration-underline"><a (click)="navigateTo('home')" class="text-white">Home</a></small><br>
+          <small class="text-white text-decoration-underline"><a (click)="navigateTo('about')" class="text-white">About</a></small><br>
+          <small class="text-white text-decoration-underline"><a (click)="navigateTo('contact')" class="text-white">Contact Us</a></small>
         </div>
 
         <div class="col-lg-3 col-md-4">

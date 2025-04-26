@@ -30,7 +30,6 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/bootstrap/css/boot.css",
               "src/assets/dropzone/dropzone.css"
             ],
             "scripts": [
