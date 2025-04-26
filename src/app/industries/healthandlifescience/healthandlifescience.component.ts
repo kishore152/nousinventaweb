@@ -14,7 +14,6 @@ export class HealthandlifescienceComponent {
         constructor(private route: ActivatedRoute, private router: Router){
         }
         navigateTo(ind:any){
-          console.log(ind)
           this.router.navigate(['/'+ind])
         }
 }

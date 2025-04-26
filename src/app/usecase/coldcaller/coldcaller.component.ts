@@ -16,7 +16,6 @@ export class ColdcallerComponent {
   }
 
   navigateTo(ind:any){
-    console.log(ind)
     this.router.navigate(['/'+ind])
   }
 }

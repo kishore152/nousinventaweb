@@ -16,7 +16,6 @@ export class TravelandlogisticComponent {
       }
 
       navigateTo(ind:any){
-        console.log(ind)
         this.router.navigate(['/'+ind])
       }
 }

@@ -31,7 +31,6 @@ export class ContactComponent {
     }
 
   navigateTo(ind:any){
-    console.log(ind)
     this.router.navigate(['/'+ind])
   }
   bannerfile:any;

@@ -17,7 +17,6 @@ export class EducationComponent {
   }
 
   navigateTo(ind:any){
-    console.log(ind)
     this.router.navigate(['/'+ind])
   }
 }

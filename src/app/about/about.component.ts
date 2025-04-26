@@ -16,7 +16,6 @@ export class AboutComponent implements OnInit,AfterViewInit {
       }
   
     navigateTo(ind:any){
-      console.log(ind)
       this.router.navigate(['/'+ind])
     }
 
