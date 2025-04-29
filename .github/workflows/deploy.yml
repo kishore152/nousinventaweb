@@ -3,29 +3,29 @@ name: Deploy Angular App to GitHub Pages
 on:
   push:
     branches:
-      - main  # or your default branch
+      - main  # or 'master' if that's your default
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Setup Node
+      - name: Use Node.js 20.11
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '20.11'
 
-      - name: Install Dependencies
+      - name: Install dependencies
         run: npm install
 
-      - name: Build Angular App
-        run: npm run build -- --configuration production
+      - name: Build Angular app
+        run: npm run build -- --base-href=/nousinventaweb/
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: dist/beta
+          folder: dist/beta  # replace 'beta' with your project name from angular.json
